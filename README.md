@@ -14,6 +14,16 @@ small mods. Each mod works on its own.
   machine; undo, redo and an archive view; keyboard-driven too (`?` on the board).
 - **Corral layout** (`layouts/corral.json`): Herdr's main window with the
   board one key (`cmd-shift-k`) or one click away.
+- **Live Board** (`mods/live-board`, `0.1.6`): every agent as a card that
+  moves by itself, In Progress while it works and Review while it waits for
+  you, with its Space / Tab, a title and your last prompt; 完成 closes an
+  agent. The **live layout** (`layouts/live.json`) flips to it with
+  `cmd-shift-k`.
+- **Claude titles** (`hooks/herdr-title.py`): a Claude Code hook that names
+  each session in its terminal title (Haiku's short title for the first
+  prompt; a `/rename` name wins), so Herdr's agents list shows a name per
+  pane instead of "Claude Code". Copy it to `~/.claude/hooks/` and add it to
+  `UserPromptSubmit` and `SessionStart` in `~/.claude/settings.json`.
 
 Status: `0.1.17`, in daily use. Built on herdr-app 0.1.12. Not yet tried: a
 Claude agent on another machine (its cache countdown and resume; Codex there

@@ -1,4 +1,5 @@
 {
   "global": { "cmd-shift-k": "mod.open:corral-board" },
-  "layout:corral": { "cmd-shift-k": "corral-board.toggle" }
+  "layout:corral": { "cmd-shift-k": "corral-board.toggle" },
+  "layout:live": { "cmd-shift-k": "live-board.toggle" }
 }
